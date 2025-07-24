@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-data=pd.read_csv('week6.csv')
+data=pd.read_csv('data/week6.csv')
 my_range = [1]*len(data.index)
 
 fig  = plt.figure(figsize=(10,2))
