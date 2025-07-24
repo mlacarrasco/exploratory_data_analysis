@@ -15,4 +15,5 @@ plt.xlabel("Family Member")
 plt.ylabel("Pies Consumed")
 
 plt.xticks(rotation=45, horizontalalignment="center")
-
+plt.tight_layout()
+plt.show()

@@ -11,5 +11,4 @@ plotdata.plot(kind="bar", stacked = True)
 plt.title("Mince Pie Consumption Study")
 plt.xlabel("Family Member")
 plt.ylabel("Pies Consumed")
-
-
+plt.show()

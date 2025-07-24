@@ -18,3 +18,9 @@ plt.legend(
     ], 
     ["male", "female"]
 )
+plt.title("Family Age Distribution")
+plt.xlabel("Family Member")
+plt.ylabel("Age")
+plt.xticks(rotation=45, horizontalalignment="center")
+plt.tight_layout()
+plt.show()

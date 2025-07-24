@@ -1,6 +1,8 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 
-df = pd.read_csv("tasa.csv")
+df = pd.read_csv("data/tasa.csv")
 ordf = df.sort_values(by='2019')
 my_range = range(1,len(df.index)+1)
 

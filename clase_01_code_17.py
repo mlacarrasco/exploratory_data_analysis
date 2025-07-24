@@ -17,4 +17,5 @@ plt.legend(
 plt.title("Mince Pie Consumption Study")
 plt.xlabel("Family Member")
 plt.ylabel("Pies Consumed")
-
+plt.tight_layout()
+plt.show()

@@ -5,8 +5,7 @@ import numpy as np
 se = pd.Series( 3 * np.random.rand(4), 
                  index = ["a", "b", "c", "d"], 
                  name = "Serie")
-
-print(df)
+print(se)
 
 se.plot.pie( labels=["AA", "BB", "CC", "DD"],
              colors=["r", "g", "b", "c"],
@@ -14,3 +13,8 @@ se.plot.pie( labels=["AA", "BB", "CC", "DD"],
              fontsize=20,
              figsize=(8,6))
 
+plt.title("Random Data Pie Chart")
+plt.ylabel("Values")
+plt.xticks(rotation=45, horizontalalignment="center")
+plt.tight_layout()
+plt.show()

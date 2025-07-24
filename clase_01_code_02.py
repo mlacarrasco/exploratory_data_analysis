@@ -14,5 +14,4 @@ plt.bar(X + 0.25, data[1], color = 'g', width = 0.25)
 plt.bar(X + 0.50, data[2], color = 'r', width = 0.25)
 
 plt.legend(labels=['CS', 'IT', 'CS/TC'])
-
 plt.show() 

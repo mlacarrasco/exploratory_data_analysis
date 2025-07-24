@@ -9,7 +9,6 @@ plotdata = pd.DataFrame({ 	"pies_2018":[40, 12, 10, 26, 36],
 plotdata.plot(kind="barh")
 
 plt.title("Mince Pie Consumption Study")
-plt.xlabel("Family Member")
-plt.ylabel("Pies Consumed")
-
-
+plt.xlabel("Pies Consumed")
+plt.ylabel("Family Member")
+plt.show()

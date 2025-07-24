@@ -11,5 +11,4 @@ plotdata[["pies_2018", "pies_2020"]].plot(kind="bar")
 plt.title("Mince Pie Consumption Study")
 plt.xlabel("Family Member")
 plt.ylabel("Pies Consumed")
-
-
+plt.show()
