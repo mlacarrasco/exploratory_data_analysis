@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 mu = 200
 sigma = 25
 n_bins = 50

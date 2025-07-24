@@ -2,7 +2,10 @@ import pandas as pd
 import plotly.express as px
 import plotly
 
-plotly.io.renderers.default = 'colab'
+#importante: instalar pip install plotly
+
+#activar si se ejecuta en Google Colab
+#plotly.io.renderers.default = 'colab'
 
 import numpy as np
 
@@ -13,7 +16,7 @@ df = pd.DataFrame({'Age':col_1,
                    'Height': col_2})
 
 fig = px.histogram(df, x="Age")
-
+fig.add_trace(px.histogram(df, x="Height").data[0])
 fig.show()
 
 
