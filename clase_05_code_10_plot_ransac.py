@@ -1,20 +1,9 @@
-"""
-===========================================
-Robust linear model estimation using RANSAC
-===========================================
-
-In this example we see how to robustly fit a linear model to faulty data using
-the RANSAC algorithm.
-
-"""
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import linear_model, datasets
 
-
 n_samples = 1000
 n_outliers = 130
-
 
 X, y, coef = datasets.make_regression(n_samples=n_samples, n_features=1,
                                       n_informative=1, noise=10,

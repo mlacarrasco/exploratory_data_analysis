@@ -7,12 +7,10 @@ from matplotlib import patches
 
 
 # lectura de los datos
-df= pd.read_csv('airquality.csv')
+df= pd.read_csv('data/airquality.csv')
+# eliminamos filas con valores NaN
+df.dropna(subset=['Ozone', 'Temp'], inplace=True)
 
-
-# seleccionamos dos columnas
-df = df[['Ozone', 'Temp']]
-df = df.dropna()
 df = df.to_numpy()
 
 X= df[:,0].reshape(-1,1)
@@ -22,7 +20,7 @@ y= df[:,1]
 lr = linear_model.LinearRegression()
 lr.fit(X, y)
 
-# Robustly fit linear model with RANSAC algorithm
+#Modelo lineal robusto con algoritmo de RANSAC
 ransac = linear_model.RANSACRegressor(min_samples=20)
 ransac.fit(X,y)
 inlier_mask = ransac.inlier_mask_

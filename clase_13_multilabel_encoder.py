@@ -3,7 +3,8 @@ import pandas as pd
 from sklearn.preprocessing import MultiLabelBinarizer
 from mlxtend.frequent_patterns import apriori
 
- 
+#instalar mlxtend
+#pip install mlxtend
 
 dataset = {'A':[['Milk', 'Onion', 'Nutmeg', 'Kidney Beans', 'Eggs', 'Yogurt'],
            ['Dill', 'Onion', 'Nutmeg', 'Kidney Beans', 'Eggs', 'Yogurt'],

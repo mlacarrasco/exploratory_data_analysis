@@ -11,7 +11,7 @@ from matplotlib import patches
 
 
 # lectura de los datos
-df= pd.read_csv('airquality.csv')
+df= pd.read_csv('data/airquality.csv')
 
 
 # seleccionamos dos columnas
@@ -63,6 +63,7 @@ ellipse = patches.Ellipse(xy=(centerpoint[0], centerpoint[1]),
                   angle=np.rad2deg(np.arccos(v[0, 0])))
 ellipse.set_facecolor('#0984e3')
 ellipse.set_alpha(0.5)
+ellipse.set_edgecolor('black')
 fig = plt.figure()
 ax = plt.subplot()
 ax.add_artist(ellipse)

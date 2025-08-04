@@ -23,7 +23,7 @@ from mlxtend.frequent_patterns import association_rules
 from mlxtend.preprocessing import TransactionEncoder
  
 #los datos no deben tener encabezado
-basket = pd.read_csv('store_data.csv', header=None)
+basket = pd.read_csv('data/store_data.csv', header=None)
 
 
 

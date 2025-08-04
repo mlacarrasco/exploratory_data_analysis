@@ -1,7 +1,5 @@
 """
- Universidad Adolfo Ibañez
- Facultad de Ingeniería y Ciencias 
- Miguel Carrasco (miguel.carrasco@uai.cl)
+ Miguel Carrasco (miguel.carrasco@udp.cl)
  version 1.1 (07/06/2021)
 
  Objetivo:
@@ -52,7 +50,7 @@ def TestIndependence(df, colX, colY):
 
 #////////////////////////////////
 # PROGRAMA PPAL
-df = pd.pandas.read_csv("titanic.csv")
+df = pd.pandas.read_csv("data/titanic.csv")
 print(df.dtypes )
 
 #Caracteristicas de la BD

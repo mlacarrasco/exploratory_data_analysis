@@ -1,8 +1,5 @@
 """
- Universidad Adolfo Ibañez
- Facultad de Ingeniería y Ciencias
-
- Miguel Carrasco (miguel.carrasco@uai.cl)
+  Miguel Carrasco (miguel.carrasco@udp.cl)
  version 1.0 (28/08/2019)
  
  Objetivo:

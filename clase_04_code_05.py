@@ -1,8 +1,9 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
+import pandas as pd
 
-df= pd.read_csv("wine.csv")
-df.drop('Class',axis='columns', inplace=True)
+df = pd.read_csv('data/wine.csv')
+df.drop('Class', axis='columns', inplace=True)
 
 correlation_mat = df.corr()
 

@@ -10,7 +10,7 @@ print(zLeft)
 print(zRight)
 
 #datos del problema
-X= 41.5
+X = 41.5
 n = 10
 sigma = 0.3
 

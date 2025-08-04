@@ -3,8 +3,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from apyori import apriori
 
+#install: pip install apyori
 
-store_data = pd.read_csv('store_data.csv')
+store_data = pd.read_csv('data/store_data.csv')
 
 print(store_data.head())
 
