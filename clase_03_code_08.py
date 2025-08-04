@@ -14,7 +14,7 @@ continents =["Africa", "Asia", "North America", "Europe", "Oceania", "South Amer
 
 fmtr = matplotlib.ticker.FuncFormatter(miles)
 
-df = pd.read_csv('tasaFertilidad2019vsGPD.csv')
+df = pd.read_csv('data/tasaFertilidad2019vsGPD.csv')
 
 
 fig, ax = plt.subplots(figsize=(8,8))

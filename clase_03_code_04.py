@@ -4,20 +4,20 @@ import matplotlib.pyplot as plt
 import matplotlib
 from matplotlib.patches import Patch
 
-colorbar ={"Africa":'k', 
+colorbar ={"Africa":'r', 
   "Asia":'y', 
-  "North America":'r', 
-  "Europe":'b', 
-  "Oceania":'g', 
-  "South America":'m'}
-
-
+  "North America":'c', 
+  "Europe":'g', 
+  "Oceania":'b', 
+  "South America":'m'} 
+  
 def miles(x, pos):
     return '${:,.1f} M'.format(x*1e-3)
 
+
 fmtr = matplotlib.ticker.FuncFormatter(miles)
 
-df = pd.read_csv('tasaFertilidad2019vsGPD.csv')
+df = pd.read_csv('data/tasaFertilidad2019vsGPD.csv')
 
 x = df['TasaFertilidad']
 y = df['IngresoPerCapita']

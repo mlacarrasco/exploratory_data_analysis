@@ -11,7 +11,7 @@ def miles(x, pos):
 colorbar ={"Africa":'r', "Asia":'y', "North America":'c', "Europe":'g', "Oceania":'b', "South America":'m'} 
 fmtr = matplotlib.ticker.FuncFormatter(miles)
 
-df = pd.read_csv('tasaFertilidad2019vsGPD.csv')
+df = pd.read_csv('data/tasaFertilidad2019vsGPD.csv')
 
 xs = np.log2(df['TasaFertilidad'])
 ys = np.log10(df['IngresoPerCapita'])

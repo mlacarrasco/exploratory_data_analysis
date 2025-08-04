@@ -5,6 +5,9 @@ import matplotlib
 from matplotlib.patches import Patch
 import seaborn as sb
 
+
+#instalar scipy y statsmodels si no están instalados  
+#pip install scipy statsmodels
 from scipy import stats
 from statsmodels.formula.api import ols
 
@@ -16,7 +19,7 @@ colorbar ={"Africa":'r',
            "Oceania":'b', 
            "South America":'m'} 
 
-df = pd.read_csv('tasaFertilidad2019vsGPD.csv')
+df = pd.read_csv('data/tasaFertilidad2019vsGPD.csv')
 
 xs = np.log2(df['TasaFertilidad'])
 ys = np.log10(df['IngresoPerCapita'])

@@ -14,7 +14,7 @@ continents =["Africa", "Asia", "North America", "Europe", "Oceania", "South Amer
 
 fmtr = matplotlib.ticker.FuncFormatter(miles)
 
-df = pd.read_csv('tasaFertilidad2019vsGPD.csv')
+df = pd.read_csv('data/tasaFertilidad2019vsGPD.csv')
 
 
 fig, ax = plt.subplots(figsize=(8,8))
@@ -25,14 +25,6 @@ for i in range(len(continents)):
   x = df_sel['TasaFertilidad']
   y = df_sel['IngresoPerCapita']
   ax.scatter(x,y, color=df_sel['Continente'].replace(colorbar), marker=markerlist[i],label=continents[i], s=50)
-
-  for xs,ys in zip(x,y):
-    label = continents[i]
-    plt.annotate(label, # this is the text
-                 (xs,ys), # this is the point to label
-                 textcoords="offset points", # how to position the text
-                 xytext=(0,10), # distance from text to points (x,y)
-                 ha='center') # horizontal alignment can be left, right or center
 
 ax.set_title('Niños por mujer vs Ingreso per cápita 2019')
 ax.set_xlabel('Promedio de niños por mujer')
